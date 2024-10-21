@@ -1,0 +1,144 @@
+<link rel="stylesheet" href="css.css">
+
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <title>Meny</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        
+        <header id="topp">
+            <nav> 
+                <div class="merkelapper">
+                    <a href="forside.html"> <button class="merkelapper">Forside</button></a>
+                    <a href="side1.html"><button class="merkelapper">Åpningstider</button></a> 
+                    <a href="side2.html"> <button class="merkelapper">Produkter</button></a>
+                    <a href="side3.html"> <button class="merkelapper">Bestill</button></a>
+                    <a href="side4.html"> <button class="merkelapper">Info</button></a>
+                </div>
+            </nav>
+        </header>
+
+        <h1>Våre produkter</h1>
+        <main>
+            <section class="meny">
+                <article class="to-kolonnerTre-rader" id="en"></article>
+                <article class="en-kolonneTo-rader"> 
+                    <span>
+                        <h1 class="kategori">Kaker</h1>  
+                        <ul>
+                            <li>Marsipan</li>
+                            Perfekt for marsipan elskeren
+                            <li>Red velvet</li>
+                            Unik og deilig!
+                            <li>Beste sjokoladekaken</li>
+                            Navnet sier alt du trenger å vite om den!
+                        </ul>
+                    </span>
+            
+                </article>
+                    
+                </article>
+                <article class="to-kolonnerTre-rader" id="to"></article>
+                <article class="en-kolonneTo-rader"> 
+                    <span>
+                        <h1 class="kategori">Muffins</h1>  
+                        <ul>
+                            <li>Blåbær</li>
+                            Med søte og friske bær
+                            <li>Sjokolade</li>
+                            med deilige sjokoladebiter
+                            <li>Vanilje</li>
+                            Med deiligste vanilje-smaken!
+                        </ul>
+                    </span> </article>
+                <article class="to-kolonnerTre-rader" id="tre"></article>
+                <article class="en-kolonneTo-rader"> 
+                    <span>
+                        <h1 class="kategori">Cookies</h1>  
+                        <ul>
+                            <li>Chocolate chip</li>
+                            Søt kjeks med sjokoladebiter!
+                            <li>Deluxe sjokolade</li>
+                            Sjokolade med sjokoldebiter - hva er bedre?
+                            <li>Havre</li>
+                            Vår sunne variant
+                        </ul>
+                    </span> </article>
+            </section>
+        </main>
+        <button><a href="#topp"> til toppen^</a></button>
+    </body>
+    </html>
+
+    <style>
+        .meny{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            max-width: 95vw;
+            width: 100%;
+            margin: 0 auto;
+            grid-auto-rows: minmax(8rem,auto);
+            gap: 1rem;
+            
+        }
+        .to-kolonnerTre-rader{
+            grid-column: span 2;
+            grid-row: span 3;
+            border: solid 3px #2A3132;
+        }
+        .en-kolonneTo-rader{
+            display: flex;
+            grid-row: span 3;  
+            border: solid 3px #2A3132; 
+            justify-content: center;
+            align-items: center;
+        }
+        #en{
+            background-image: url(../../CSS/prøve/bilder/kaker.jpg);
+            background-position: center;
+            object-fit: contain;
+        
+        }
+        #to{
+            background-image: url(../../CSS/prøve/bilder/muffins2.jpg);
+            background-position: center;
+            object-fit: cover;
+        }
+        #tre{
+            background-image: url(../../CSS/prøve/bilder/cookies2.jpg);
+            background-position: center;
+            object-fit: contain;
+        }
+        .kategori{
+            text-decoration: underline;
+            
+        }
+        li{
+            color: #2A3132;
+            padding-top: 0.5rem;
+            font-weight: bolder;
+        }
+        h1::selection{
+            color: white;
+            background-color: #2A3132;
+        }
+        li::selection{
+            color: white;
+            background-color: #2A3132;
+        }
+        button{
+            color: #2A3132;
+            transition: 1s;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            text-align: center
+        }
+    </style>
+   

@@ -1,0 +1,91 @@
+<link rel="stylesheet" href="css.css">
+
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <title>Om oss</title>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/6bacce4063.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav> 
+                <div class="merkelapper">
+                    <a href="forside.html"> <button class="merkelapper">Forside</button></a>
+                    <a href="side1.html"><button class="merkelapper">Åpningstider</button></a> 
+                    <a href="side2.html"> <button class="merkelapper">Produkter</button></a>
+                    <a href="side3.html"> <button class="merkelapper">Bestill</button></a>
+                    <a href="side4.html"> <button class="merkelapper">Info</button></a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="meny">
+                   <span>
+                    <form action="https://formsubmit.co/your@email.com" method="POST">
+                        <h2>Antall kakebiter</h2>
+                        <label for="">Marsipankake:</label>
+                        <input type="number" name="antall" placeholder="max 10" min="1" max="10"> <br>
+                        <label for="">Red Velvet:</label>
+                        <input type="number" name="antall" placeholder="max 10" min="1" max="10"> <br>
+                        <label for="">Sjokoladekake:</label>
+                        <input type="number" name="antall" placeholder="max 10" min="1" max="10"> <br>
+                    
+                        <h2>Antall muffins</h2>
+                        <label for="">Blåbær:</label>
+                        <input type="number" name="antall" placeholder="max 10" min="1" max="10"> <br>
+                        <label for="">Sjokolade:</label>
+                        <input type="number" name="antall" placeholder="max 10" min="1" max="10"> <br>
+                        <label for="">Vanilje:</label>
+                        <input type="number" name="antall" placeholder="max 10" min="1" max="10"> <br>
+
+                        <h2>Antall cookies</h2>
+                        <label for="">Chocolate chip:</label>
+                        <input type="number" name="antall" placeholder="max 10" min="1" max="10"> <br>
+                        <label for="">Deluxe sjokolade:</label>
+                        <input type="number" name="antall" placeholder="max 10" min="1" max="10"> <br>
+                        <label for="">Havre:</label>
+                        <input type="number" name="antall" placeholder="max 10" min="1" max="10"> <br>
+
+                        <p class="overskrift">Vennligst fyll inn personlig informasjon slik at vi klarer å gjennomføre bestillingen</p>
+                        <label>Ditt navn:</label>
+                        <input type="text" name="navn" placeholder="Ola Nordmann" required> <br> <br>
+
+                        <label for="">Dato for reservasjonen:</label>
+                        <input type="date" name="dato" required> <br> <br>
+                        
+                        <label for="">Velg tidsrom for henting:</label>
+                        <select name="tidsrom" id="" required>
+                            <option value="">Velg tidsrom</option> 
+                            <option value="12:00-15:00">12:00-15:00</option>
+                            <option value="15:00-19:00">15:00-19:00</option>
+                            <option value="19:00-23:00">19:00-23:00</option>
+                        </select> <br> <br>
+
+                        <label for="">Ønsker du en drikke med på kjøpet? Vi tilbyr deilig saft for 15kr glasset</label>
+                        <input type="radio" value="ja" name="drikke" required>
+                        <span>Ja</span>
+                        <input type="radio" value="nei" name="drikke">
+                        <span>Nei</span> <br> <br>
+
+                        <input type="text" name="name" required>
+                        <input type="email" name="email" required>
+                        <button type="submit">Send</button> 
+                   </form>
+                    
+                   </span>
+                </article>
+                
+            </section>
+        </main>
+
+
+    </body>
+
+<style>
+    .overskrift{
+            text-decoration: underline;
+        }
+</style>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <title>Hovedside</title>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/6bacce4063.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        
+        <header>
+            <nav> 
+                <div class="merkelapper">
+                    <a href="forside.html" title="du er her nå"> <button class="merkelapper">Forside</button></a>
+                    <a href="side1.html"><button class="merkelapper">Åpningstider</button></a> 
+                    <a href="side2.html"> <button class="merkelapper">Produkter</button></a>
+                    <a href="side3.html"> <button class="merkelapper">Bestill</button></a>
+                    <a href="side4.html"> <button class="merkelapper">Info</button></a>
+                    
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <span>
+                <img src="../../CSS/prøve/bilder/kakebutikk.jpg" alt=""> 
+            </span>
+        </main>
+
+        <section class="footer" id="footer">
+            <footer>
+                <p id="kontakt1">Noen spørsmål? </p> <br>
+                <p id="kontakt2">Kontakt oss her! </p>
+                <p class="medie">Gmail: <i class="fa-solid fa-phone"></i> <nonsensetag class="medie2">sb.kaker@gmail.com</nonsensetag></p>
+                <p class="medie">Tlf: <blablabla class="medie2">+47 409 75 68</blablabla> </p>
+                <p>Trykk her for mer informasjon om oss!: <button><a href="side4.html"> Om oss</a></button></p>
+            </footer>
+        </section>
+        
+    </body>
+</html>
+
+<style>
+    html{
+        font-size: 100%;
+    }
+    .merkelapper{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+            gap: 16px;
+            text-transform: uppercase;
+            justify-content: center;
+            font-size: larger;
+            
+    } 
+    .merkelapper > div{
+            border: 1px solid gray;
+            padding: 16px 32px;
+            border-radius: 30px;
+            
+    }
+    .medie{
+        font-weight: bolder;
+        
+    }
+    .medie2 {
+        font-weight: lighter;
+        
+    }
+    #kontakt1{
+        font-size: larger;
+    }
+    #kontakt2{
+        font-size: larger;
+        text-decoration: underline;
+    }
+    footer{
+        line-height: 10px; 
+        background-color: #2A3132;
+        padding: 10px 10px;
+        color: white;
+        width: 95vw;
+        align-items: center;
+    }
+    button{
+        background-color: #90AFC5;
+        border: 3px solid white;
+        padding: 16px 32px;
+        border-radius: 30px;
+        font-size: 1rem;
+        
+    }
+    main{
+        background-color: #90AFC5;
+        color: #2A3132;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    main img{
+        width: 100%;
+    }
+    body{
+        background-color: #90AFC5;
+        margin: 20px 20px;
+        
+    }
+    header{
+        background-color: #2A3132;
+        padding: 10px 10px 10px;
+        width: 100vw;
+        margin-left: -20px;   
+    }
+    #navn{
+        position: absolute;
+        left: 20px;
+        padding-top: 10px;
+    }
+    #navn1{
+        font-size: larger;
+        color: #90AFC5;
+    }
+    #navn2{
+        color: #90AFC5;
+        text-align: center;
+    } 
+    button:hover{
+        transform: scale(1.05);
+    }
+    nav{
+        width: 100vw;
+        justify-content: center;
+    }
+
+</style>
